@@ -14,11 +14,9 @@ class OrderPageLocators:
     RENTAL_PERIOD_MENU = By.XPATH, ".//*[@class='Dropdown-menu']/div"
     SCOOTER_COLOR_FIELD = By.XPATH, ".//*[@class='Checkbox_Label__3wxSf']"
     COMMENT_FIELD = By.XPATH, ".//*[@placeholder='Комментарий для курьера']"
-    ORDER_BUTTON = By.XPATH, ".//*[contains(@class, 'Button_Button__ra12g Button_Middle__1CSJM') " \
-                                "and text()='Заказать']"
-    YES_OR_NO_BUTTON = By.XPATH, ".//*[contains(@class, 'Button_Button__ra12g " \
-                                  "Button_Middle__1CSJM')""and text()='Нет'or text()='Да']"
+    ORDER_BUTTON = By.XPATH, "//button[text()='Назад']/parent::div/button[text()='Заказать']"
+    YES_OR_NO_BUTTON = By.XPATH, "//button[text()='Да']"
 
-    ORDER_IN_PROCESS_INFO = By.XPATH, ".//*[@class='Order_ModalHeader__3FDaJ']"
+    ORDER_IN_PROCESS_INFO = By.XPATH, "//div[starts-with(text(), 'Заказ')]"
     SEE_STATUS_BUTTON = By.XPATH, "//button[text()='Посмотреть статус']"
 

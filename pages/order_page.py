@@ -71,7 +71,7 @@ class OrderPage(BasePage):
         self.driver.find_element(*OrderPageLocators.ORDER_BUTTON).click()
 
     def click_yes(self):
-        self.driver.find_elements(*OrderPageLocators.YES_OR_NO_BUTTON)[1].click()
+        self.driver.find_element(*OrderPageLocators.YES_OR_NO_BUTTON).click()
 
     def check_order_is_processed(self):
         return self.driver.find_element(*OrderPageLocators.ORDER_IN_PROCESS_INFO).text

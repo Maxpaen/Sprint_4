@@ -1,5 +1,5 @@
 from selenium import webdriver
-from test_data import TestData
+from  data import TestData
 from pages.main_page import MainPage
 from pages.order_page import OrderPage
 
